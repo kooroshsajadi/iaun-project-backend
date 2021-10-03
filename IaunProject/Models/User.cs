@@ -13,6 +13,7 @@ namespace IaunProject.Models
         [BsonId]
         [BsonRepresentation(BsonType.ObjectId)]
         public string Id { get; set; }
+        public string Role { get; set; }
         class PersonalInfo
         {
             public string FirstName { get; set; }

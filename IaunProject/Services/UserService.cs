@@ -1,7 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.Linq;
-using System.Threading.Tasks;
 using IaunProject.Models;
 using MongoDB.Driver;
 
@@ -26,23 +24,18 @@ namespace IaunProject.Services
 
         public User Get(string id)
         {
-            return _users.Find<User>(user => user.Id == id).FirstOrDefault();
+            return _users.Find(user => user.Id == id).FirstOrDefault();
         }
 
-        public User Create(User book)
+        public User Create(User user)
         {
-            _users.InsertOne(book);
-            return book;
+            _users.InsertOne(user);
+            return user;
         }
 
-        public void Update(string id, User bookIn)
+        public void Update(string id, User user)
         {
-            _users.ReplaceOne(user => user.Id == id, bookIn);
-        }
-
-        public void Remove(User bookIn)
-        {
-            _users.DeleteOne(user => user.Id == bookIn.Id);
+            _users.ReplaceOne(user => user.Id == id, user);
         }
 
         public void Remove(string id)
