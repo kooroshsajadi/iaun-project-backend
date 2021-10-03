@@ -1,4 +1,5 @@
 using IaunProject.Models;
+using IaunProject.Services;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
@@ -27,6 +28,8 @@ namespace IaunProject
 
             services.AddSingleton<IVakilHouseDatabaseSettings>(sp =>
                 sp.GetRequiredService<IOptions<VakilHouseDatabaseSettings>>().Value);
+
+            services.AddSingleton<UserService>();
 
             services.AddControllers();
             services.AddSwaggerGen(c =>
