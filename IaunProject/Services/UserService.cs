@@ -27,6 +27,11 @@ namespace IaunProject.Services
             return _users.Find(user => user.Id == id).FirstOrDefault();
         }
 
+        public List<User> Get(List<string> ids)
+        {
+            return _users.Find(user => ids.Contains(user.Id)).ToList();
+        }
+
         public User Create(User user)
         {
             _users.InsertOne(user);
@@ -36,6 +41,11 @@ namespace IaunProject.Services
         public void Update(string id, User user)
         {
             _users.ReplaceOne(user => user.Id == id, user);
+        }
+
+        public void Remove(User userIn)
+        {
+            _users.DeleteOne(user => user.Id == userIn.Id);
         }
 
         public void Remove(string id)

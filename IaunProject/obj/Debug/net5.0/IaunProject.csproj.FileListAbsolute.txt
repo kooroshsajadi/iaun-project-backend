@@ -27,3 +27,15 @@ C:\Users\kouro\source\repos\IaunProject\IaunProject\obj\Debug\net5.0\IaunProject
 C:\Users\kouro\source\repos\IaunProject\IaunProject\obj\Debug\net5.0\ref\IaunProject.dll
 C:\Users\kouro\source\repos\IaunProject\IaunProject\obj\Debug\net5.0\IaunProject.pdb
 C:\Users\kouro\source\repos\IaunProject\IaunProject\obj\Debug\net5.0\IaunProject.genruntimeconfig.cache
+C:\Users\kouro\source\repos\IaunProject\IaunProject\bin\Debug\net5.0\DnsClient.dll
+C:\Users\kouro\source\repos\IaunProject\IaunProject\bin\Debug\net5.0\MongoDB.Bson.dll
+C:\Users\kouro\source\repos\IaunProject\IaunProject\bin\Debug\net5.0\MongoDB.Driver.dll
+C:\Users\kouro\source\repos\IaunProject\IaunProject\bin\Debug\net5.0\MongoDB.Driver.Core.dll
+C:\Users\kouro\source\repos\IaunProject\IaunProject\bin\Debug\net5.0\MongoDB.Libmongocrypt.dll
+C:\Users\kouro\source\repos\IaunProject\IaunProject\bin\Debug\net5.0\SharpCompress.dll
+C:\Users\kouro\source\repos\IaunProject\IaunProject\bin\Debug\net5.0\runtimes\win\native\libzstd.dll
+C:\Users\kouro\source\repos\IaunProject\IaunProject\bin\Debug\net5.0\runtimes\win\native\snappy32.dll
+C:\Users\kouro\source\repos\IaunProject\IaunProject\bin\Debug\net5.0\runtimes\win\native\snappy64.dll
+C:\Users\kouro\source\repos\IaunProject\IaunProject\bin\Debug\net5.0\runtimes\linux\native\libmongocrypt.so
+C:\Users\kouro\source\repos\IaunProject\IaunProject\bin\Debug\net5.0\runtimes\osx\native\libmongocrypt.dylib
+C:\Users\kouro\source\repos\IaunProject\IaunProject\bin\Debug\net5.0\runtimes\win\native\mongocrypt.dll

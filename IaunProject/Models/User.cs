@@ -14,7 +14,10 @@ namespace IaunProject.Models
         [BsonRepresentation(BsonType.ObjectId)]
         public string Id { get; set; }
         public string Role { get; set; }
-        class PersonalInfo
+        public PersonalInformattion PersonalInfo { get; set; }
+        public ContactInformation ContactInfo { get; set; }
+        public AddressInformation AddressInfo { get; set; }
+        public class PersonalInformattion
         {
             public string FirstName { get; set; }
             public string LastName { get; set; }
@@ -22,12 +25,12 @@ namespace IaunProject.Models
             public string Religion { get; set; }
             public string Occupation { get; set; }
         }
-        class ContactInfo
+        public class ContactInformation
         {
             public string PhoneNumber { get; set; }
             public string Email { get; set; }
         }
-        class Address
+        public class AddressInformation
         {
             [BsonElement("Country")]
             public string Country { get; set; }

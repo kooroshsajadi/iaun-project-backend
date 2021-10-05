@@ -8,7 +8,9 @@ using MongoDB.Bson.Serialization.Attributes;
 
 namespace IaunProject.Models
 {
-    public class PersonalInfo
+    internal class PersonalInfo
     {
+
     }
 }
+
