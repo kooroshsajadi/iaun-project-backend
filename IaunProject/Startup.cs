@@ -31,7 +31,9 @@ namespace IaunProject
 
             services.AddSingleton<UserService>();
 
-            services.AddControllers();
+            services.AddControllers()
+                .AddNewtonsoftJson(options => options.UseMemberCasing());
+
             services.AddSwaggerGen(c =>
             {
                 c.SwaggerDoc("v1", new OpenApiInfo { Title = "IaunProject", Version = "v1" });
