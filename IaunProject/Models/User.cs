@@ -1,7 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
 using MongoDB.Bson;
 using MongoDB.Bson.Serialization.Attributes;
 
@@ -14,6 +11,9 @@ namespace IaunProject.Models
         [BsonRepresentation(BsonType.ObjectId)]
         public string Id { get; set; }
         public string Role { get; set; }
+        public string Username { get; set; }
+        public byte[] PasswordHash { get; set; }
+        public byte[] PasswordSalt { get; set; }
         public PersonalInformattion PersonalInfo { get; set; }
         public ContactInformation ContactInfo { get; set; }
         public AddressInformation AddressInfo { get; set; }
