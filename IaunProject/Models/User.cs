@@ -14,10 +14,10 @@ namespace IaunProject.Models
         public string Username { get; set; }
         public byte[] PasswordHash { get; set; }
         public byte[] PasswordSalt { get; set; }
-        public PersonalInformattion PersonalInfo { get; set; }
+        public PersonalInformation PersonalInfo { get; set; }
         public ContactInformation ContactInfo { get; set; }
         public AddressInformation AddressInfo { get; set; }
-        public class PersonalInformattion
+        public class PersonalInformation
         {
             public string FirstName { get; set; }
             public string LastName { get; set; }

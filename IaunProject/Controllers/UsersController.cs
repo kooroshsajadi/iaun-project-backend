@@ -14,7 +14,7 @@ using Microsoft.Extensions.Options;
 
 namespace IaunProject.Controllers
 {
-    [Authorize]
+    //[Authorize]
     [Route("api/[controller]")]
     [ApiController]
     public class UsersController : ControllerBase
